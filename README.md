@@ -29,23 +29,23 @@ Ubuntu subsystem that can we install right inside Windows called, rather uncreat
 
 To install Bash for Windows 10 go here: https://msdn.microsoft.com/en-us/commandline/wsl/install_guide
 
-On Mac, spotlight search (cmd+space) for the application named 'Terminal' and open it.
+On Mac, spotlight search (cmd+space) for the application named Terminal and open it.
 
 For programming you do not need to be an expert at using the terminal but you do need to know how to navigate 
 around and do the basics. This link should be enough: 
 https://www.digitalocean.com/community/tutorials/basic-linux-navigation-and-file-management
 
-Try running commands like "cd ~" and "ls -la" in your terminal and make sure they work, if the do you're all set.
+Try running commands like `cd ~` and `ls -la` in your terminal and make sure they work, if the do you're all set.
 
 ### Creating Your Environment
 Once you are in a bash shell you can start creating the folders and files you need.
 (directories = folders)
 
 On Mac you can create a directory anywhere you want but we'll use the simple option, home.
-'cd ~' changes your current working directory to your home directory (~ = path of your home directory)
-'mkdir ~/Development' this will create a new empty directory named Development in your home directory.
-'cd ~/Development' will move you into it.
-'touch main.cpp' will create an empty file named main.cpp in your current directory.
+`cd ~` changes your current working directory to your home directory (~ = path of your home directory)
+`mkdir ~/Development` this will create a new empty directory named Development in your home directory.
+`cd ~/Development` will move you into it.
+`touch main.cpp` will create an empty file named main.cpp in your current directory.
 On mac you can now enter "open ." and it will open Finder in that current directory. (. = current directory)
 From here you can right click on main.cpp and select open with Visual Studio Code and you're ready to go.
 
