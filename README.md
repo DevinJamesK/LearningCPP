@@ -42,11 +42,11 @@ Once you are in a bash shell you can start creating the folders and files you ne
 (directories = folders)
 
 On Mac you can create a directory anywhere you want but we'll use the simple option, home.  
-`cd ~` changes your current working directory to your home directory (~ = path of your home directory)  
+`cd ~` changes your current working directory to your home directory ( `~` = path of your home directory)  
 `mkdir ~/Development` this will create a new empty directory named Development in your home directory.  
 `cd ~/Development` will move you into it.  
 `touch main.cpp` will create an empty file named main.cpp in your current directory.  
-On mac you can now enter "open ." and it will open Finder in that current directory. (. = current directory)  
+On mac you can now enter `open .` and it will open Finder in that current directory. ( `.` = current directory)  
 From here you can right click on main.cpp and select open with Visual Studio Code and you're ready to go.  
 
 
