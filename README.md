@@ -2,21 +2,20 @@
 A collection of simple C++ programs for teaching and learning.
 
 ## Getting Started
-For learning C++, the simplest way is to use a basic text editor and a console that can run the command g++.
+The simplest way start coding in C++ is to use a basic text editor and a console that can run the command `g++`.
 
 ### Text Editor
 When you are first learning to program there is no need yet for a large complex application called an intergraded 
 development envirement or IDE for short. These IDEs can be very helpful later but for now lets keep it simple and 
-download a simpler yet still powerful text editor called Visual Studio Code. https://code.visualstudio.com/
+download a simple yet still powerful text editor called Visual Studio Code. https://code.visualstudio.com/
 
-Visual Studio Code should not be confusted with the full Visual Studio the IDE.  Visual Studio Code is the same text 
+Visual Studio Code should not be confused with the full Visual Studio the IDE.  Visual Studio Code is the same text 
 editor that full Visual Studio uses but without many of its other features to help cut down on the complexity. 
 Many professional developers elect to work this way forever and never use a full IDE but if you wanted to upgrade 
 to the full Visual Studio IDE later it will look very familiar after using Visual Studio Code.  It is also cross
 platform so you only have to learn one program to write code on any operating system.
 
-So, now we can write, save, and open code files.  In C++ is it standard to end code files with ".cpp" and this is 
-the only file type we will need for now.
+So, now we can write, save, and open code files.
 
 ### Console (Terminal)
 Console, Terminal, and Shell, all pretty much mean the same thing, a command prompt where you can interface with 
@@ -46,16 +45,17 @@ On *Mac* you can create a directory anywhere you want but we'll use the simple o
 `mkdir ~/Development` this will create a new empty directory named Development in your home directory.  
 `cd ~/Development` will move you into it.  
 `touch main.cpp` will create an empty file named main.cpp in your current directory.  
+In C++ is it standard to end code files with ".cpp" and this is the only file type we will need for now.  
 On mac you can now enter `open .` and it will open Finder in that current directory. ( `.` = current directory)  
 From here you can right click on main.cpp and select open with Visual Studio Code and you're ready to go.  
 
 On *Windows 10*, because of the split file system, we want do things slightly differently. 
 We want our files to actually be stored within Windows for reliablity and security reasons so we can just go to
-our home directory in windows using File Explorer not console and then right click > new > folder > name it whatever 
-you want. I like the name Development because it looks good next to the default windows folder names like Documents, 
-Pictures, etc...
+our home directory in windows using File Explorer, *not* console, and then right click > new > folder > name it 
+whatever you want. I like the name Development because it looks good next to the default windows folder names like 
+Documents, Pictures, etc...
 
-Now in Bash for Windows we want to nativage to that folder we just created.  
+Now in Bash for Windows we want to nativage to that folder we just created in File Explorer.
 To do this we run `cd /mnt/c/Users/<username>/Development` (replace `<username>` with your windows username)   
 and create an empty main.cpp file using `touch main.cpp`.   
 Now go back to your File Explorer windows and right click on the new main.cpp that should have appeared there and
@@ -63,7 +63,14 @@ right click > open with > Visual Studio Code.
 
 Now you can start writing code.
 
+### Running Your Code
+Before C++ code can be ran (excuted) we must compile it into a executable program.
+We do this using the command `g++ main.cpp` which will generate a runnable program named a.out.
+We can now run this program by entering `./a.out`.
 
+If you would like to name your output file you can do so by adding `-o <output file name>` to the end of the g++ 
+command makeing it `g++ main.cpp -o hello`.  This means that the code in main.cpp will be used to create the
+the program hello which can be ran by entering `./hello'.
 
 
 
