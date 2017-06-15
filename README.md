@@ -41,13 +41,29 @@ Try running commands like `cd ~` and `ls -la` in your terminal and make sure the
 Once you are in a bash shell you can start creating the folders and files you need.
 (directories = folders)
 
-On Mac you can create a directory anywhere you want but we'll use the simple option, home.  
+On *Mac* you can create a directory anywhere you want but we'll use the simple option, home.  
 `cd ~` changes your current working directory to your home directory ( `~` = path of your home directory)  
 `mkdir ~/Development` this will create a new empty directory named Development in your home directory.  
 `cd ~/Development` will move you into it.  
 `touch main.cpp` will create an empty file named main.cpp in your current directory.  
 On mac you can now enter `open .` and it will open Finder in that current directory. ( `.` = current directory)  
 From here you can right click on main.cpp and select open with Visual Studio Code and you're ready to go.  
+
+On *Windows 10*, because of the split file system, we want do things slightly differently. 
+We want our files to actually be stored within Windows for reliablity and security reasons so we can just go to
+our home directory in windows using File Explorer not console and then right click > new > folder > name it whatever 
+you want. I like the name Development because it looks good next to the default windows folder names like Documents, 
+Pictures, etc...
+
+Now in Bash for Windows we want to nativage to that folder we just created.  
+To do this we run `cd /mnt/c/Users/<username>/Development` (replace `<username>` with your windows username)   
+and create an empty main.cpp file using `touch main.cpp`.   
+Now go back to your File Explorer windows and right click on the new main.cpp that should have appeared there and
+right click > open with > Visual Studio Code.
+
+Now you can start writing code.
+
+
 
 
 
