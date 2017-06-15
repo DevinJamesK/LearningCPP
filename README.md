@@ -64,13 +64,15 @@ right click > open with > Visual Studio Code.
 Now you can start writing code.
 
 ### Running Your Code
-Before C++ code can be ran (excuted) we must compile it into a executable program.
-We do this using the command `g++ main.cpp` which will generate a runnable program named a.out.
+Before C++ code can be ran (excuted) we must compile it into a executable program.  
+Make sure the code in the text editor has been saved.  
+We do this using the command `g++ main.cpp` which will generate a runnable program named a.out if there are no 
+errors in your code.  
 We can now run this program by entering `./a.out`.
 
 If you would like to name your output file you can do so by adding `-o <output file name>` to the end of the g++ 
 command makeing it `g++ main.cpp -o hello`.  This means that the code in main.cpp will be used to create the
-the program hello which can be ran by entering `./hello'.
+the program hello which can be ran by entering `./hello`.
 
 
 
