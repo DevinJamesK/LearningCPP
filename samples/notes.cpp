@@ -22,6 +22,7 @@ int main() {
 
     // added all scale patters to array that holds arrays of type int
     int * scales[2] = {major, minor};
+    string scaleNames[2] = {"Major", "Minor"};
 
     // placeholder for user input (we will add this function later)
     string userNote = askUserNote();
@@ -30,16 +31,16 @@ int main() {
     //                      arr | size | "C"
     int offset = findOffset(notes, 11, userNote);
 
-    // formatting
-    cout << "----------------------------" << endl;
-
-    int noteIndex = 0;
+    
     // prints notes in scale
+    int noteIndex = 0;
+    cout << "Notes in Scale " << userNote << " " 
+         << scaleNames[userScale] << ":" << endl;
     for (int i=0; i<7; i++) {
         // deals with octaves
         noteIndex = scales[userScale][i] + offset;
-        if (noteIndex > 11) {
-            noteIndex -= 11;
+        if (noteIndex >= 12) {
+            noteIndex -= 12;
         }
         cout << notes[noteIndex] << ", ";
     }
@@ -49,13 +50,15 @@ int main() {
     return 0;
 }
 
-
 /*
 * Asks user for root note, check that is a valid choice and returns it
 */
 string askUserNote() {
-    // TODO return dummy data
-    return "A";
+    string note = "";
+    cout << "Enter a note: (ie C, C#, E, etc...)" << endl;
+    cin >> note;
+    cout << "----------------------------" << endl;
+    return note;
 }
 
 /*
@@ -68,9 +71,12 @@ int askUserScale() {
     << "0: Major" << endl
     << "1: Minor" << endl;
 
+    // saving user input via cin into varable userInput
     cin >> userInput;
 
     // TODO we should check here that the user entered a correct input
+
+    cout << "----------------------------" << endl;
 
     return userInput;
 }
