@@ -28,16 +28,21 @@ int main() {
     int userScale = askUserScale();
 
     //                      arr | size | "C"
-    int offset = findOffset(notes, 7, userNote);
+    int offset = findOffset(notes, 11, userNote);
 
     // formatting
     cout << "----------------------------" << endl;
 
+    int noteIndex = 0;
     // prints notes in scale
     for (int i=0; i<7; i++) {
-        cout << notes[scales[userScale][i] + offset] << ", ";
+        // deals with octaves
+        noteIndex = scales[userScale][i] + offset;
+        if (noteIndex > 11) {
+            noteIndex -= 11;
+        }
+        cout << notes[noteIndex] << ", ";
     }
-
     // formatting
     cout << endl;
 
@@ -50,7 +55,7 @@ int main() {
 */
 string askUserNote() {
     // TODO return dummy data
-    return "C";
+    return "A";
 }
 
 /*
@@ -86,5 +91,6 @@ int findOffset(string * arr, int size, string target) {
             targetIndex = i;
         }
     }
+    
     return targetIndex;
 }
