@@ -76,8 +76,8 @@ the program hello which can be ran by entering `./hello`.
 
 *TIP: You can name both your main.cpp file and the program g++ creates whatever you want but your code file should end with the .cpp extention. 
 
-Thoughtout the years C++ has had a variety of updates and some functions are only accessable in the newer versions so we should specify the version to the g++ compiler to avoid probables as we progress.  We can do this by adding the `-std=c++0x` flag when compiling.
+Thoughtout the years C++ has had a variety of updates and some functions are only accessable in the newer versions so we should specify the version to the g++ compiler to avoid probables as we progress.  We can do this by adding the `-std=c++11` flag when compiling.
 
-Our final command will be: `g++ -std=c++0x <filename>.cpp -o <program name>`
+Our final command will be: `g++ -std=c++11 <filename>.cpp -o <program name>`
 
 
