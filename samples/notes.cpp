@@ -87,7 +87,7 @@ int askUserScale() {
 * The target index happens to be the offset we need to shift to change roots.
 */
 int findOffset(string * arr, int size, string target) {
-    // we start with -1 because arrays have no negitive indexs
+    // we start with -1 because arrays have no negative indexes
     int targetIndex = -1;
     
     // searching array for target
