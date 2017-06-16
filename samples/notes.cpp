@@ -51,7 +51,7 @@ int main() {
 
 
 /*
-* Asks user for root note, check that is is a valid choice and returns it
+* Asks user for root note, check that is a valid choice and returns it
 */
 string askUserNote() {
     // TODO return dummy data
