@@ -1,5 +1,5 @@
 # LearningCPP
-A collection of simple C++ programs for teaching and learning.
+A simple "getting started" guide to C++ written for friend of mine and anyone else who might find it useful. 
 
 ## Getting Started
 The simplest way start coding in C++ is to use a basic text editor and a console that can run the command `g++`.
@@ -16,6 +16,8 @@ to the full Visual Studio IDE later it will look very familiar after using Visua
 platform so you only have to learn one program to write code on any operating system.
 
 So, now we can write, save, and open code files.
+
+*TIP: There are many very popular text editors and programmers tend to get a little zellous when debating which are best.  Feel free to use any text editor you want so long as it designed for code (Atom, Vim, Emacs, sublime, etc, and not things like Microsoft Word)*
 
 ### Console (Terminal)
 Console, Terminal, and Shell, all pretty much mean the same thing, a command prompt where you can interface with 
@@ -76,7 +78,7 @@ the program hello which can be ran by entering `./hello`.
 
 *TIP: You can name both your main.cpp file and the program g++ creates whatever you want but your code file should end with the .cpp extention. 
 
-Thoughtout the years C++ has had a variety of updates and some functions are only accessable in the newer versions so we should specify the version to the g++ compiler to avoid probables as we progress.  We can do this by adding the `-std=c++11` flag when compiling.
+Thoughtout the years C++ has had a variety of updates and some functions are only accessable in the newer versions so we should specify the version to the g++ compiler to avoid problems as we progress.  We can do this by adding the `-std=c++11` flag when compiling.
 
 Our final command will be: `g++ -std=c++11 <filename>.cpp -o <program name>`
 
